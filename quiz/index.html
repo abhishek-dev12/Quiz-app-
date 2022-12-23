@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a4e08c9842.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Quiz app</title>
+</head>
+<body>
+
+    <div class="wrapper">
+ 
+   <div class="container">
+  
+  <!-- rules for game -->
+  
+  <section class="rules ">
+     <h1 class="heading">Rules</h1>
+     <p class="paragraph">1. Once you picked any option then you can't select any other option</p>
+     <p class="paragraph">2. There will be timer that will running continue based on how much time you have selected, once timer is over quiz will end.</p>
+     <p class="paragraph">3. Two Points will be alloted on every correct answer</p>
+     <p class="paragraph">4. You have to attempt every question in order to get the next question </p>
+     
+     <button class="rules-btn btn">Continue</button>   
+  </section>
+    <!-- welcome box when user open the game -->
+  
+  <div class="welcome-box ">
+    <div class="welcome-box_container">
+       <span class="welcome-heading heading headingactive" id="Title">Welcome to this quiz</span>
+       <p class="welcome_description paragraph" id="description">Hello, welcome to this quiz app, if you want to practice or your friend challenged you for a quiz then you came to a right place we have variety of catgeories and quesstions.All the best. </p>
+       <button class="next-btn btn" id="next-button">Start the quiz</button>
+  </div>
+</div>
+
+    
+<!-- options for quiz -->
+
+    <section class="user-details ">
+         <!-- <div class="container"> -->
+           <div class="quiz-options">
+            <h1>your quiz</h1>
+              <div class="user-name">
+                <label for="name" class="label-text">Name</label>
+                <input type="text" class="name" value="">
+             </div>
+             <div class="quiz-options-first flex">
+                <div class="category-option">
+                    <label for="category" class="label-text">Choose Category</label>
+                    <select name="category" class="select-text" id="category-id" autocomplete="off" >
+                      <option value="7" disabled></option>
+                        <!-- <option value="8">category</option> -->
+                        <option value=9 selected="selected">General Knowledge</option>
+                        <option value=10>Entertainment: Books</option>
+                        <option value=11>Entertainment: Film</option>
+                        <option value=12>Entertainment: Music</option>
+                        <option value=13>Entertainment: Musicals & Theatres</option>
+                        <option value=14>Entertainment: Television</option>
+                        <option value=15>Entertainment: Video Games</option>
+                        <option value=16>Entertainment: Board Games</option>
+                        <option value=17>Science & Nature</option>
+                        <option value=18>Science: Computers</option>
+                        <option value=19>Science: Mathematics</option>
+                        <option value=20>Mythology</option>
+                        <option value=21>Sports</option>
+                        <option value=22>Geography</option>
+                        <option value=23>History</option>
+                        <option value=24>Politics</option>
+                        <option value=25>Art</option>
+                        <option value=26>Celebrities</option>
+                        <option value=27>Animals</option>
+                        <option value=28>Vehicles</option>
+                        <option value=29>Entertainment: Comics</option>
+                        <option value=30>Science: Gadgets</option>
+                        <option value=31>Entertainment: Japanese Anime & Manga</option>
+                        <option value=32>Entertainment: Cartoon & Animations</option>
+                       
+                        
+                    </select>
+                </div>
+                <div class="difficult">
+                    <label for="difficult" class="label-text">Choose Difficulty</label>
+                    <select name="difficulty" class="select-text" id="diffcult-choices" autocomplete="off">
+                      <option value="" disabled></option>
+                        <!-- <option value=""> difficult</option> -->
+                        <option value="1" selected>easy</option>
+                        <option value="2">medium</option>
+                        <option value="3">hard</option>
+                    </select>
+                </div>
+             </div>
+             <div class="quiz-options-second flex">
+                <div class="number">
+                    <label for="number" class="label-text">Choose question</label>
+                    <select name="" class="select-text" id="question-number" autocomplete="off">
+                        <option value="" disabled></option>
+                        <option value="" selected>1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                  </select>
+                </div>
+                <div class="type">
+                    <label for="type" class="label-text">Choose type</label>
+                    <select name="type" class="select-text" id="user-type" autocomplete="off">
+                     <option value="0" selected>multiple</option>
+                        <option value="1">True / False</option>
+                    </select>
+                </div>
+             </div>
+    <div class="time">
+             <label for="" class="label-text">Choose time</label>
+               <div class="time-container flex">          
+                
+             <div class="minut">
+                    <select name="" class="select-text" id="minute-time" autocomplete="off"> 
+                      
+                      <option value="" disabled></option>
+                      <option value="" selected>1</option>
+                       <option value="">2</option>
+                       <option value="">3</option>
+                       <option value="">4</option>
+                       <option value="">5</option>
+                       <option value="">6</option>
+                       <option value="">7</option>
+                       <option value="">8</option>
+                       <option value="">9</option>
+                       <option value="">10</option>
+                       <option value="">11</option>
+                       <option value="">12</option>
+                       <option value="">13</option>
+                       <option value="">14</option>
+                       <option value="">15</option>
+                       <option value="">16</option>
+                       <option value="">17</option>
+                       <option value="">18</option>
+                       <option value="">19</option>
+                       <option value="">20</option>
+                       <option value="">21</option>
+                       <option value="">22</option>
+                       <option value="">23</option>
+                       <option value="">24</option>
+                       <option value="">25</option>
+                       <option value="">26</option>
+                       <option value="">27</option>
+                       <option value="">28</option>
+                       <option value="">29</option>
+                       <option value="">30</option>
+                       <option value="">31</option>
+                       <option value="">32</option>
+                       <option value="">33</option>
+                       <option value="">34</option>
+                       <option value="">35</option>
+                       <option value="">36</option>
+                       <option value="">37</option>
+                       <option value="">38</option>
+                       <option value="">39</option>
+                       <option value="">40</option>
+                       <option value="">41</option>
+                       <option value="">42</option>
+                       <option value="">43</option>
+                       <option value="">44</option>
+                       <option value="">45</option>
+                       <option value="">46</option>
+                       <option value="">47</option>
+                       <option value="">48</option>
+                       <option value="">49</option>
+                       <option value="">50</option>
+                       <option value="">51</option>
+                       <option value="">52</option>
+                       <option value="">53</option>
+                       <option value="">54</option>
+                       <option value="">54</option>
+                       <option value="">55</option>
+                       <option value="">56</option>
+                       <option value="">57</option>
+                       <option value="">58</option>
+                       <option value="">59</option>
+                       <option value="">60</option>
+                      </select>
+                   </div>
+                </div> 
+             </div>  
+             <div class="start-quiz_btn">
+                <button class="start-btn" id="start-quiz-btn">Start quiz</button>
+             </div>
+          </div>
+    </section> 
+
+    <!-- This is quiz section -->
+    
+        <section class="quiz-section" id="quiz-section-id">
+             <div class="quiz-section_header">
+                <div class="time-container flex">
+                    <div class="hour-box"><span class="hour-value quiz-aria-text"></span></div>
+                    <!-- <div class="minut-box"><span class="minut-value quiz-aria-text"></span></div>
+                    <div class="second-box"><span class="seconds-value quiz-aria-text"></span></div> -->
+                 </div>
+              <div class="player-name_box">
+                <span class="player-name_text quiz-aria-text"></span>   
+             </div>
+          </div>
+          <div class="total-question">
+            <div class="total-quesion paragraph">Question no <span class="current question-number" id="current-question-num">0</span> of <span class="total-question" id="total-question-stats">0</span></div>
+            <div class="total-question-animation-box" id="prograss-bar"></div>
+          </div>
+          <div class="question-box quiz-aria-text"><div class="question-number-box">Q.<span class="current-question-number" id="current-question-num">1</span></div><div><p class="current-question quiz-aria-text"></p></div></div>
+          <div class="options">
+            <div class="instruction"><p class="instruction-text paragraph">Please choose one of the below options</p></div>
+            <div class="answer-options"><div><span class="option-number paragraph">1</span></div><button class="answer-container paragraph" id="optionA"></button></div>
+            <div class="answer-options"><div><span class="option-number paragraph">2</span></div><button class="answer-container paragraph" id="optionB"></button></div>
+            <div class="answer-options" id="hideAnswer3"><div><span class="option-number paragraph">3</span></div><button class="answer-container paragraph" id="optionC"></button></div>
+            <div class="answer-options" id="hideAnswer4"><div><span class="option-number paragraph">4</span></div><button class="answer-container paragraph" id="optionD"></button></div>
+          </div>
+          <div class="next-btn-box">
+          <button class="next-question-btn">next</button>
+          </div>
+        </section>
+
+      <section class="result">
+        
+         
+          <div class="result-container">
+            <div class="stats-text"><span class="result_UserName paragraph">Abhishek</span> <span class="stats-heading paragraph">here is your result</span></div>
+            <div class="stats">
+               <div class="question stats-data">
+                 <h1 class="paragraph">Total Question</h1> <span class="Total-questions paragraph"></span>
+               </div>
+               <div class="answer stats-data">
+               <h1 class="paragraph">Correct Answer</h1> <span class="correct-answer paragraph"></span>
+            </div>
+            <!-- <div class="time-taken stats-data">
+              <h1 class="paragraph">Time Taken</h1> <span class="Total-time-taken paragraph"></span>
+           </div> -->
+            <div class="points stats-data">
+              <h1 class="paragraph">Total points</h1> <span class="score paragraph"></span>
+            </div>
+            
+            </div>
+            <div>
+              <button class="play-again-btn">Play again</button>
+            </div>
+         </div>
+   </section>
+</div>
+
+<!-- warning popup -->
+<section class="warning">
+  <div class="warning-container">
+      <img src="oops.jpg" alt="oops image">
+      <div class="warning-message">
+         <p class="paragraph">Please Enter your name to continue</p>
+         <button class="warning-btn paragraph">OK</button>
+      </div>
+  </div>
+</section>
+
+<!-- endgame popup -->
+
+<section class="endgame ">
+  <img src="popup_img.jpg" alt="popup image">
+      <div class="endgame-container">
+      <p class="paragraph">Quiz end let's see how much scored</p>
+      <button class="start-btn btn-show-result">Show result</button>
+    </div>
+</section>
+   
+</div>
+   
+       <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* ani animation */
+
+@keyframes ani{
+  
+  0%{
+    transform: translateX(0%);
+  }
+
+  100%{
+    transform: translateX(-200%);
+  }
+}
+
+/* slider closing */
+
+@keyframes activeanimation{
+  
+  0%{
+    transform: translateX(100%);
+  }
+
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+
+/* first two slide animation */
+
+@keyframes fadeIn{
+ 
+  0%{
+   opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut{
+  0%{
+     opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+/* typewrite animation */
+
+@keyframes headingAnimation{
+  from{
+    background-size: 0 200%;
+  }
+}
+
+@keyframes blinking{
+ 50%{
+   background-position: 0 -100%, 0 0%;
+ }
+}
+
+@keyframes  fadeInUp{
+ 
+ to{
+   transform: scale(1);
+   opacity: 1;
+ }
+}
+
+/* button animation   */
+
+@keyframes btnanimate{
+  0%{
+    width:100%;
+  }
+
+ 100%{
+    left:30%;
+    right:30%;
+    width:5rem;
+    
+    border-radius: 50px;
+    color:#000;
+    font-size: 2rem;
+    
+  }
+}
+
